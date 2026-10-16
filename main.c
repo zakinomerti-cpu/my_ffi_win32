@@ -2,9 +2,6 @@ __declspec(dllimport) void __stdcall  ExitProcess(int);
 __declspec(dllimport) void* __stdcall LoadLibraryA(const char*);
 extern void* _stdcall Callf(void*, const char*, int, void**);
 
-#define CDECL	0
-#define STDCALL	1
-
 int entry() {
 	void* h = LoadLibraryA("user32.dll");
 
